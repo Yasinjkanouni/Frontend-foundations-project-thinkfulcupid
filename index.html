@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width" />
     <title>ThinkfulCupid - Free Online Dating</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -19,7 +18,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="group">
       <div class="logo">ThinkfulCupid</div>
       <nav>
         <ul id="menu">
@@ -36,51 +35,38 @@
       <section id="join">
         <div class="group">
           <div class="item item-double">
-            <img
-              id="form-img"
-              src="images/love.png"
-              alt="ThinkfulCupid - love"
-            />
+            <img src="images/love.png" alt="ThinkfulCupid - love" />
           </div>
-          <!-- Join form -->
-          <div class="item item-form">
-            <h2>Find your perfect match</h2>
-            <form id="join-form">
-              <div class="form-field">
-                <label for="email">Email</label>
+          <!-- Add join form here -->
+          <div class="item">
+            <h1>Find your perfect match</h1>
+            <form>
+              <div>
+                <label for="email">Email:</label>
                 <input
                   id="email"
                   type="email"
                   name="email"
                   placeholder="email@example.com"
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                  required
                 />
               </div>
-              <div class="form-field">
-                <label for="password">Create a password</label>
-                <input
-                  id="password"
-                  type="password"
-                  name="password"
-                  pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
-                  minlength="10"
-                  required
-                />
+              <div>
+                <label for="password">Password:</label>
+                <input id="password" type="password" name="password" />
               </div>
-              <div class="form-field">
-                <label for="username">Username</label>
-                <input id="username" type="text" name="username" required />
+              <div>
+                <label for="username">Username:</label>
+                <input id="username" type="text" name="username" />
               </div>
-              <div class="form-field">
-                <label for="orientation">I am a....</label>
-                <select id="orientation" name="orientation" size="1">
+              <div>
+                <label for="gender">I am a...</label>
+                <select name="gender" id="gender" size="1">
                   <option value="female">female</option>
                   <option value="male">male</option>
                   <option value="other">other</option>
                 </select>
               </div>
-              <button type="button">Join</button>
+              <button type="submit">Join</button>
             </form>
           </div>
         </div>
@@ -102,7 +88,7 @@
               alt="ThinkfulCupid - Two people with sunset and candles"
             />
           </div>
-          <div class="item item-double item-paragraph">
+          <div class="item-double">
             <p>
               Fusce porta odio nunc, eget pretium massa rutrum sit amet. Etiam
               fringilla aliquam dapibus. Maecenas quis nisi sed turpis aliquam
@@ -120,7 +106,7 @@
       <!-- Download -->
       <section id="download">
         <div class="group">
-          <div class="item item-download">
+          <div class="item item-double">
             <h2>Download the App</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
@@ -142,12 +128,8 @@
               </li>
             </ul>
           </div>
-          <div class="item">
-            <img
-              class="download-img"
-              src="images/download.png"
-              alt="Thinkfulbnb - download"
-            />
+          <div class="item item-double">
+            <img src="images/download.png" alt="Thinkfulbnb - download" />
           </div>
         </div>
       </section>
@@ -155,8 +137,8 @@
       <!-- Blog -->
       <section id="blog" class="alternate-background">
         <h2>Blog</h2>
-        <div class="group blog-group">
-          <div class="item blog-item">
+        <div class="group">
+          <div class="item">
             <img src="images/blog-post-1.png" alt="Thinkfulbnb - blog post 1" />
             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
             <p>
@@ -167,7 +149,7 @@
               vestibulum.
             </p>
           </div>
-          <div class="item blog-item">
+          <div class="item">
             <img src="images/blog-post-2.png" alt="Thinkfulbnb - blog post 2" />
             <h3>Mauris eget nisl quis metus ultrices venenatis</h3>
             <p>
@@ -178,7 +160,9 @@
               vestibulum.
             </p>
           </div>
-          <div class="item blog-item">
+        </div>
+        <div class="group">
+          <div class="item">
             <img src="images/blog-post-3.png" alt="Thinkfulbnb - blog post 3" />
             <h3>
               Fusce augue diam, sollicitudin at metus id, congue placerat neque
@@ -191,7 +175,7 @@
               vestibulum.
             </p>
           </div>
-          <div class="item blog-item">
+          <div class="item">
             <img src="images/blog-post-4.png" alt="Thinkfulbnb - blog post 4" />
             <h3>Aenean purus dui, aliquam vitae auctor vel</h3>
             <p>
@@ -211,4 +195,3 @@
     </footer>
   </body>
 </html>
-
