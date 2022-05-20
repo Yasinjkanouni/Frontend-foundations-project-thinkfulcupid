@@ -171,55 +171,40 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-@media all and (min-width: 480px) {
-  .logo {
-    font-size: 45px;
-  }
-
+@media all and (min-width:480px) {
   header {
-    display: flex;
+    padding: 0;
     justify-content: space-between;
-    padding: 0px 30px;
   }
 
-  header h1 {
-    margin: 14px 0;
-    padding-top: 0;
+  header nav ul {
+    justify-content: right;
   }
 
-  header nav {
-    margin-top: 8px;
+  
+  .logo {
+    font-size: 48px;
+    margin: 10px;
   }
 
   .group {
     flex-direction: row;
+    align-items: center;
   }
 
-  .item-form,
-  .item-paragraph,
-  .item-download {
-    align-self: center;
+  h1 {
+    font-size: 24px;
   }
 
-  form input {
-    width: 30%;
+  h3 {
+    font-size: 14px;
   }
 
-  .item {
-    flex: 1;
+  h1, h3 {
+    text-align: center;
   }
 
-  .item-double {
-    flex: 2;
+  p, li {
+    font-size: 12px
   }
-
-  .blog-group,
-  .about-group {
-    flex-wrap: wrap;
-  }
-
-  .blog-item {
-    flex: 1 0 33%;
-  }
-  
 }
